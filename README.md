@@ -16,12 +16,16 @@ Dataset used for the purposes of this tutorial is taken from the [House prices
 prediction competition on Kaggle](https://www.kaggle.com/competitions/home-data-for-ml-course/data). 
 Two CSV files located in the `data` folder: `train.csv` and `test.csv`.
 
-## Usage
+## Instructions
 
-Following the notebooks and exercises all you need is a Python environment with Jupyter
-installed. The notebooks are run using the `jupyter notebook` command, select the 
-notebook you want to run in the `notebooks` folder and follow the instructions. **For
-running the different tools with all of the features available it is recommended to use 
-`Python 3.7.11` and up**
+To Follow the notebooks and exercises there are two options:
+1. Use your own Python environment with Jupyter installed. The notebooks are run using 
+the `jupyter notebook` command, select the notebook you want to run in the `notebooks` 
+folder and follow the instructions. **For running the different tools with all of the 
+features available it is recommended to use `Python 3.7.11` and up**.
+2. Use Google Colaboratory without any pre-installation needed. to the repository's 
+[GitHub page](https://github.com/NatanMish/data_validation). Choose one of the notebooks
+in the `notebooks` folder and from the interactive view, click on the link to `open in 
+Colab`.
 
 
