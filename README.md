@@ -5,7 +5,7 @@ projects tutorial. The tutorial consists of three sections for each step in the
 production data science model life cycle:
 1. [Training pipeline](notebooks/training_pipeline_data_validation.ipynb) (using [Pandera](https://pandera.readthedocs.io/en/stable/))
 2. [Model serving](notebooks/model_serving_data_validation.ipynb) (using [Pydantic](https://pydantic-docs.helpmanual.io/))
-3. [Database management](notebooks/database_management_data_validation.ipynb) (using [Great Expectations](https://great-expectations.readthedocs.io/en/latest/))
+3. [Database management](notebooks/database_data_validation.ipynb) (using [Great Expectations](https://great-expectations.readthedocs.io/en/latest/))
 
 Each section comes with a notebook in which there are explanations, code snippets and 
 exercises.
@@ -23,9 +23,9 @@ To Follow the notebooks and exercises there are two options:
 the `jupyter notebook` command, select the notebook you want to run in the `notebooks` 
 folder and follow the instructions. **For running the different tools with all of the 
 features available it is recommended to use `Python 3.8` and up**.
-2. Use Google Colaboratory without any pre-installation needed. to the repository's 
-[GitHub page](https://github.com/NatanMish/data_validation). Choose one of the notebooks
-in the `notebooks` folder and from the interactive view, click on the link to `open in 
-Colab`.
+2. Use Google Colaboratory without any pre-installation needed. Click the link to go to 
+the repository's [GitHub page](https://github.com/NatanMish/data_validation). Choose one
+of the notebooks in the `notebooks` folder and from the interactive view, click on the 
+link to `open in Colab`.
 
 
