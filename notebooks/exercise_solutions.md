@@ -159,6 +159,17 @@ exercise_schema = pa.DataFrameSchema(
 )
 ```
 
+### Exercise 2
+```
+def feat_eng_all_steps(X: pd.DataFrame, y: pd.Series) -> (pd.DataFrame, pd.Series, Optional[pd.DataFrame]):
+    try:
+        return feat_eng_step_1(X), y
+    except pa.errors.SchemaError as e:
+        isolated_failure_cases = e.failure_cases
+        # Send isolated_failure_cases to a separate function to handle them
+        return X[~X.index.isin(isolated_failure_cases["index"])], y[~y.index.isin(isolated_failure_cases["index"])], isolated_failure_cases
+```
+
 ## Model serving data validation with Pydantic
 ### Exercise 1
 ```
