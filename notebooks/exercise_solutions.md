@@ -196,3 +196,13 @@ class Input(BaseModel):
         extra = 'forbid'
         allow_mutation = False
 ```
+
+### Exercise 2
+```
+from pydantic import conlist, conint, StrictBool, constr
+class Input(BaseModel):
+    Amenities: conlist(str, max_items=5, unique_items=True)
+    HousePrice: conint(ge=0, le=10000000, multiple_of=100, strict=True)
+    PoolBool: StrictBool
+    MSZoning: constr(max_length=20, to_lower=True, regex=r".*zone.*")
+```
