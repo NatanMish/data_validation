@@ -2,11 +2,11 @@
 ## Database validation with Great Expectations
 ### Exercise 1
 ```
-home_data.expect_column_values_to_be_of_type("Street", 'str')
-home_data.expect_column_values_to_not_be_null("LandContour")
-home_data.expect_column_min_to_be_between("YearBuilt", 1700, 1900)
-home_data.expect_column_median_to_be_between("LotArea", 5000, 15000)
-home_data.expect_column_most_common_value_to_be_in_set("SaleType", ["WD", "New"])
+house_data.expect_column_values_to_be_of_type("Street", 'str')
+house_data.expect_column_values_to_not_be_null("LandContour")
+house_data.expect_column_min_to_be_between("YearBuilt", 1700, 1900)
+house_data.expect_column_median_to_be_between("LotArea", 5000, 15000)
+house_data.expect_column_most_common_value_to_be_in_set("SaleType", ["WD", "New"])
 ```
 
 ### Exercise 2
@@ -201,7 +201,7 @@ class Input(BaseModel):
 ```
 from pydantic import conlist, conint, StrictBool, constr
 class Input(BaseModel):
-    Amenities: conlist(str, max_items=5, unique_items=True)
+    Amenities: conlist(str, max_items=5)
     HousePrice: conint(ge=0, le=10000000, multiple_of=100, strict=True)
     PoolBool: StrictBool
     MSZoning: constr(max_length=20, to_lower=True, regex=r".*zone.*")
