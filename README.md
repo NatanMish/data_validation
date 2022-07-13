@@ -10,6 +10,8 @@ production data science model life cycle:
 Each section comes with a notebook in which there are explanations, code snippets and 
 exercises.
 
+If you would like to see me run through these notebooks from PyData London 2022, you can navigate to this YouTube video: [Data Validation for Data Science | PyData London 2022](https://youtu.be/FuUE6an5bXI)
+
 ## Data
 
 Dataset used for the purposes of this tutorial is taken from the [House prices 
